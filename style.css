@@ -1,0 +1,17 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  text-decoration: none;
+  position: relative;
+}
+
+/* 
+    Colors: 
+        Schrift: schwarz
+        Footer: #
+        Farbakzent: #006600 // grün für Links, Buttons etc. 
+
+
+*/
