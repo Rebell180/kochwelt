@@ -15,3 +15,27 @@
 
 
 */
+
+body {
+    width: 100%;
+    font-size: 24px;
+    color: #ffffff;
+}
+
+main {
+    width: 100%;
+    height: 100%;
+
+    section {
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.content {
+    width: 100%;
+    max-width: 1920px;
+    height: 100%;
+}
