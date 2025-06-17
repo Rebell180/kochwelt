@@ -5,6 +5,7 @@
   scroll-behavior: smooth;
   text-decoration: none;
   position: relative;
+  list-style: none;
 }
 
 /* #region Default Design Mock */
@@ -18,30 +19,36 @@
 
 /* #region Default Container */
 body {
-    width: 100%;
-    /* font-family: "Raleway", sans-serif; */
-    font-size: 24px;
-    color: #000000; /* Schriftfarbe */
-    min-height: 100dvh;
+  /* width: 100%;
+  height: 100%; */
+  /* font-family: "Raleway", sans-serif; */
+  font-size: 62.5%; /*62.5% von 16px = 10px = 1rem (was meinst dazu?)*/
+  color: #000000; /* Schriftfarbe */
+  /* min-height: 100vh; */
 }
 
 main {
-    width: 100%;
-    height: 100%;
-    min-height: 85dvh; /* Später überdenken*/
-
-    section {
-        width: 100%;
-        height: 100%;
-    }
+  flex: 1;
 }
 
-.content {
+main {
+  width: 100%;
+  height: 100%;
+  /* min-height: 85dvh; Später überdenken */
+}
+
+/* section {
     width: 100%;
-    max-width: 1920px;
     height: 100%;
-    justify-content: center;
-    align-items: center;
+  } */
+.content {
+  max-width: 1920px;
+  width: 100%;
+
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
 }
 /* #endregion */
 
@@ -56,49 +63,182 @@ main {
   display: flex;
 }
 
+.meals-picture {
+  width: 15rem;
+  height: 15rem;
+  border-radius: 0.3rem;
+}
+
 /* #endregion */
+
+/* #region header */
+
+.header-section {
+  justify-content: space-evenly;
+  padding: 1.5rem 0 1.5rem 0;
+
+  box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+
+  .logo-link {
+    color: #000000;
+  }
+
+  .header-logo-box {
+    justify-content: center;
+    align-items: center;
+    gap: 1.25rem;
+    font-size: 1.5rem;
+  }
+
+  .logo {
+    width: 4rem;
+    height: 4rem;
+  }
+
+  ul {
+    gap: 4rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+
+    .link {
+      color: #000000;
+    }
+
+    .link:hover {
+      text-decoration: underline;
+      text-decoration-color: rgb(207, 0, 0);
+      text-decoration-thickness: 0.25rem;
+      text-underline-offset: 0.6rem;
+    }
+  }
+}
+
+/* #endregion header */
+
+/* #region main */
+
+/* #region welcome-section */
+
+.welcome-section {
+  padding: 4.5rem 0 2rem 0;
+  border-left: 0.25rem solid rgb(241, 241, 241);
+  border-right: 0.25rem solid rgb(241, 241, 241);
+
+  h1 {
+    text-align: center;
+    font-size: 2.5rem;
+  }
+
+  .meals-selection {
+    justify-content: space-evenly;
+    padding-top: 2.5rem;
+
+    .meal {
+      gap: 0.5rem;
+
+      .meal-name {
+        text-align: center;
+        font-size: 1.8rem;
+      }
+    }
+  }
+}
+
+/* #endregion welcome-section */
+
+/* #region inspiration-section */
+
+.inspiration-section {
+  padding: 4.5rem 0 0 0;
+  background-color: rgb(241, 241, 241);
+
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+  }
+
+  .meals-selection {
+    justify-content: space-evenly;
+    align-items: center;
+    padding-top: 4.5rem;
+
+    .icon {
+      width: 4.25rem;
+      height: 4.25rem;
+      fill: #014e01; /* Farbe hier ändern */
+      cursor: pointer;
+    }
+
+    .icon:hover {
+      fill: #013801;
+    }
+
+    .meal {
+      gap: 0.5rem;
+
+      .meal-name {
+        text-align: center;
+        font-size: 1.8rem;
+      }
+    }
+  }
+
+  .meal-selection-icons {
+    justify-content: center;
+    padding-top: 1.5rem;
+    .selection-icon {
+      width: 1rem;
+      height: 1rem;
+      fill: #006600;
+    }
+  }
+}
+
+/* #endregion inspiration-section */
+
+/* #endregion main */
 
 /* #region Footer */
 footer {
   width: 100%;
-  height: 144px;
+  height: 100%;
   display: flex;
   justify-content: center;
+  background-color: #383838;
 
-  .footer-content{
+  .footer-content {
     width: 100%;
     /* height: 100%; */
-    background-color: #383838;
+
     display: flex;
     flex-direction: column;
     padding: 40px 120px;
-    
-    >div { 
+
+    > div {
       width: 100%;
-      
+
       display: flex;
       justify-content: space-between;
       align-items: center;
-      
+
       img {
         width: 64px;
         height: 64px;
         color: white;
       }
-      
-      .footer-links{
+
+      .footer-links {
         display: flex;
-        
+
         column-gap: 25px;
-        
+
         .footer-link {
           font-size: 28px;
           font-weight: bold;
-          
+
           color: #338533;
-          
         }
-        .footer-link:hover{
+        .footer-link:hover {
           text-decoration: underline;
           filter: drop-shadow(0px 0px 16px rgb(255, 255, 255, 0.3));
         }
