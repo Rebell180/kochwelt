@@ -8,9 +8,9 @@
     <link rel="stylesheet" href="./style.css">
     <link rel="stylesheet" href="./style-contact.css">
 </head>
-<body>
+<body beforeunload="init()">
 
-    <!-- #region Contact Hero -->
+    <!-- #region Section Contact Hero -->
     <section class="contact-section-hero">
         <div class="content flex-v">
             <div class="flex-h">
@@ -29,10 +29,11 @@
     <!-- #endregion -->
 
 
-    <!-- #region Contact Form -->
+    <!-- #region Section Contact Form -->
     <section class="contact-section-form">
         <div class="content flex-h">
 
+            <!-- #region Part Find us -->
             <div class="find-us-content flex-v">
 
                 <h2>Find us</h2>
@@ -49,27 +50,42 @@
                 style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             
             </div>
-            <div class="form-content flex-v">
+            <!-- #endregion -->
 
+            <!-- #region Part Form content -->
+            <div id ="contact-form" class="form-content flex-v ">
+                    
                 <form class="flex-v">
                     <label for="contact-name">Name:</label>
-                    <input id="contact-name" name="contact-name"type="text" required>
-                    
+                    <input id="contactName" name="contact-name"type="text">
+                        
                     <label for="contact-mail">E-Mail:</label>
-                    <input id="contact-mail" name="contact-mail" type="email" required>
-                    
+                    <input id="contact-mail" name="contact-mail" type="email">
+                        
                     <label for="contact-msg">Nachricht: </label>
-                    <textarea id="contact-msg" name="contact-msg" rows="8" cols="70" required>
+                    <textarea id="contact-msg" name="contact-msg" rows="8" cols="70">
                     </textarea>
-                    
-                    <input class="form-btn" type="submit">
-                    
+                        
+                    <input onclick="sendEmail()" class="form-btn" type="submit">
+                        
                 </form>
             </div>
+            <!-- #endregion -->
+                
+            <!-- #region Section Email was send -->
+            <div id ="email-send-banner" class="email-send-content flex-h d-none">
+                <div class="content flex-h">
+                    <div class="flex-h">
+                        <p>Deine E-Mail wurde erfolgreich versendet.</p>
+                    </div>
+                </div>
+            </div>
+            <!-- #endregion -->
+
+
         </div>
     </section>
     <!-- #endregion -->
-
 
 
 
@@ -92,5 +108,8 @@
         </div>
     </footer>
     <!-- #endregion -->
+
+
+    <script src="./script-contact.js" defer></script>
 </body>
 </html>

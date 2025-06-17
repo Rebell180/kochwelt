@@ -9,12 +9,14 @@
 }
 
 /* #region Default Design Mock */
+
 /* 
     Colors: 
         Schrift: schwarz
         Footer: ##338533
         Farbakzent: #006600 // grün für Links, Buttons etc. 
 */
+
 /* #endregion */
 
 /* #region Default Container */
@@ -67,6 +69,10 @@ main {
   width: 15rem;
   height: 15rem;
   border-radius: 0.3rem;
+}
+
+.d-none {
+  display: none;
 }
 
 /* #endregion */
