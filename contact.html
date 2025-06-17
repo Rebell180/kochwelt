@@ -5,10 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kochwelt - Kontakt</title>
 
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./style-contact.css">
 </head>
 <body>
-    <p>Hallo Welt</p>
+
+    <!-- #region Contact Hero -->
+    <section class="contact-section-hero">
+        <div class="content flex-v">
+            <div class="flex-h">
+                <img src="./img/logo_small.png" alt="">
+                <h2>Kontakt</h2>
+            </div>
+            <!-- <h2>Kontakt</h2> -->
+
+            <p>
+                Sie haben Fragen, Beschwerden oder anderweitige Schwierigkeiten oder wollen uns Ihr Feedback übermitteln? 
+                Dann zögern Sie nicht uns zu kontaktieren. Wir sind stets bemüht, Ihre Nachricht zeitnahe zu beantworten. 
+                Füllen Sie dafür einfach das folgende Formular aus und klicken Sie auf den "Senden"-Button.  
+            </p>
+        </div>
+    </section>
+    <!-- #endregion -->
+
+
+    <!-- #region Contact Form -->
+    <section class="contact-section-form">
+        <div class="content flex-h">
+
+            <div class="find-us-content flex-v">
+
+                <h2>Find us</h2>
+
+                <div class="flex-h">
+                    <img src="./img/map_marker.svg" alt="">
+                    <div class="flex-v">
+                        <span>Alexanderplatz 1</span>
+                        <span>10178 Berlin</span>
+                    </div>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d510.35668299476555!2d13.410233023418096!3d52.52114455934943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1750174128795!5m2!1sde!2sde" 
+                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            
+            </div>
+            <div class="form-content flex-v">
+
+                <form class="flex-v">
+                    <label for="contact-name">Name:</label>
+                    <input id="contact-name" name="contact-name"type="text" required>
+                    
+                    <label for="contact-mail">E-Mail:</label>
+                    <input id="contact-mail" name="contact-mail" type="email" required>
+                    
+                    <label for="contact-msg">Nachricht: </label>
+                    <textarea id="contact-msg" name="contact-msg" rows="8" cols="70" required>
+                    </textarea>
+                    
+                    <input class="form-btn" type="submit">
+                    
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- #endregion -->
 
 
 
