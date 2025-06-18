@@ -12,10 +12,10 @@
 
 /* 
     Colors: 
-        Footer: #403b3b
-        Schrift: schwarz
-        Akzentcolor: #008000
-        Farbakzent: #006600 // grün für Links, Buttons etc. 
+        footer: #403b3b => laut Mock
+        font: s#000000 => laut Mock
+        page accent: #008000 => Laut Mock
+        hover page accent: #006000
 */
 
 /* #endregion */
@@ -24,8 +24,18 @@
 body {
   width: 100%;
   height: 100%;
-  /* font-family: "Raleway", sans-serif; */
-  font-size: 62.5%; /*62.5% von 16px = 10px = 1rem (was meinst dazu?)*/
+  /*  
+    font-family: "Raleway", sans-serif; 
+    TODO - müssen noch gewählt und heruntergeladen werden
+  */
+  font-size: 62.5%; 
+  /*
+    62.5% von 16px = 10px = 1rem (was meinst dazu?)
+    TODO - Scheint nicht zu funktionieren. Also die Schriftgröße passt sich nicht a
+    Laut W3 Schools -> vw (dvw?) als responsive Einheit?
+    1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
+  */
+  
   color: #000000; /* Schriftfarbe */
   min-height: 100vh;
 }
@@ -233,7 +243,7 @@ footer {
     width: 100%;
     height: 100%;
 
-    padding: 40px 300px;
+    padding: 4rem 15rem;
 
     > div {
       display: flex;
