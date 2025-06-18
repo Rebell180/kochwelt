@@ -445,7 +445,6 @@ footer {
 
 /* #endregion */
 
-
 /**
 * ====================
 * === Impressumpage ===
@@ -516,6 +515,79 @@ footer {
 */
 
 /* #region dsgvo page */
+
+.section-dsgvo {
+  width: 100%;
+
+  .content {
+    width: 100%;
+
+    padding: 4.5rem 15rem 2rem 15rem;
+
+    >div {
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding-bottom: 4rem;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        padding-top: 3rem;
+      }
+
+      h3 {
+        font-size: 1.3rem;
+      }
+
+      ul {
+        width: 100%;
+        padding-left: 1.25rem;
+        li {
+          list-style: disc;
+          font-size: 1rem;
+          padding-bottom: 0.25rem;
+        }
+      }
+
+      ol {
+        width: 100%;
+        padding-left: 1.25rem;
+        li {
+          list-style: disc;
+          font-size: 1rem;
+          padding-bottom: 0.25rem;
+        }
+      }
+
+      table {
+        tbody {
+          tr {
+            font-size: 1rem;
+            padding-bottom: 0.25rem;
+          }
+        }
+      }
+
+      p {
+        font-size: 1rem;
+        padding-bottom: 0.25rem;
+        strong {
+          font-weight: 1.5rem;
+        }
+
+        a {
+          color: #008000;
+          font-weight: bold;
+          text-decoration-thickness: 0.25rem;
+          text-underline-offset: 0.6rem;
+        }
+      }
+    }
+  }
+}
 
 /* #endregion */
 
