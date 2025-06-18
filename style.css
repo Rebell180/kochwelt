@@ -1,3 +1,9 @@
+/**
+* ================
+* === DEFAULT ====
+* ================
+*/
+
 * {
   padding: 0;
   margin: 0;
@@ -89,6 +95,13 @@ section {
 }
 
 /* #endregion */
+
+/**
+* ====================
+* === Landingpage ====
+* ====================
+*/
+/* #region landingpage */
 
 /* #region header */
 
@@ -276,3 +289,183 @@ footer {
   }
 }
 /* #endregion */
+
+/* #endregion */
+
+/**
+* ====================
+* === Contactpage ===
+* ====================
+*/
+
+/* #region contactpage */
+
+/* #region contact section hero */
+.contact-section-hero {
+  .content {
+    > div {
+      margin-top: 25px;
+      /* justify-content: center; */
+      align-items: center;
+      img {
+        width: 72px;
+        height: 72px;
+      }
+      h2 {
+        font-size: 72px;
+        text-decoration: underline;
+      }
+    }
+    p {
+      font-size: 24px;
+      padding: 40px 160px;
+      text-align: center;
+    }
+  }
+}
+/* #endregion */
+
+/* #region contact area */
+.contact-section-form {
+  width: 100%;
+  padding: 0px 50px 30px 50px;
+
+  .content {
+    width: 100%;
+    /* height: 100%; */
+    align-items: flex-start;
+    justify-content: space-between;
+
+    /* #region Content Find us */
+    .find-us-content {
+      width: 50%;
+      padding: 0 25px;
+
+      h2 {
+        font-size: 48px;
+        width: 100%;
+        margin-bottom: 40px;
+      }
+      > div {
+        margin-bottom: 16px;
+        img {
+          width: 40px;
+          height: 40px;
+        }
+
+        span {
+          font-size: 20px;
+        }
+      }
+
+      iframe {
+        width: 90%;
+        height: 320px;
+        /* flex-flow: 1; */
+      }
+    }
+    /* #endregion */
+
+    /* #region Form Content */
+
+    .form-content {
+      width: 50%;
+      padding: 0 25px;
+      form {
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+
+        label {
+          width: 100%;
+          font-size: 20px;
+          font-weight: bold;
+          margin-bottom: 10px;
+        }
+
+        input {
+          width: 100%;
+          /* height: 150px; */
+          font-size: 20px;
+          padding: 5px;
+          margin-bottom: 25px;
+
+          border-radius: 8px;
+        }
+
+        textarea {
+          width: 100%;
+          font-size: 20px;
+          margin-bottom: 30px;
+          border-radius: 8px;
+          padding: 10px;
+        }
+
+        .form-btn {
+          color: antiquewhite;
+          background-color: #338533;
+
+          border-radius: 8px;
+        }
+        .form-btn:hover {
+          filter: drop-shadow(3px 3px 5px rgba(61, 61, 61, 0.6));
+        }
+      }
+    }
+    /* #endregion */
+
+    /* #region Email was send */
+    .email-send-content {
+      width: 100%;
+      .content {
+        width: 100%;
+        > div {
+          width: 100%;
+
+          border: 5px solid #338533;
+          border-radius: 16px;
+          padding: 20px 40px;
+
+          p {
+            width: 100%;
+            text-align: center;
+            font-size: 32px;
+            font-weight: bold;
+            color: #338533;
+          }
+        }
+      }
+    }
+    /* #endregion */
+  }
+
+}
+
+/* #endregion */
+
+/* #endregion */
+
+
+/**
+* ====================
+* === Impressumpage ===
+* ====================
+*/
+
+/* #region impressum page */
+
+/* #endregion */
+
+/**
+* ====================
+* === DSGVOpage ===
+* ====================
+*/
+
+/* #region dsgvo page */
+
+/* #endregion */
+
+
+
+
