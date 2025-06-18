@@ -12,8 +12,9 @@
 
 /* 
     Colors: 
+        Footer: #403b3b
         Schrift: schwarz
-        Footer: ##338533
+        Akzentcolor: #008000
         Farbakzent: #006600 // grün für Links, Buttons etc. 
 */
 
@@ -39,10 +40,11 @@ main {
   min-height: 85dvh; /*Später überdenken*/
 }
 
-/* section {
+section {
     width: 100%;
     height: 100%;
-  } */
+}
+
 .content {
   max-width: 1920px;
   width: 100%;
@@ -128,9 +130,9 @@ main {
     }
 
     .link:hover {
-      color: rgb(207, 0, 0);
+      color: #008000;
       text-decoration: underline;
-      text-decoration-color: rgb(207, 0, 0);
+      text-decoration-color: #008000;
       text-decoration-thickness: 0.25rem;
       text-underline-offset: 0.6rem;
     }
@@ -187,12 +189,12 @@ main {
     .icon {
       width: 4.25rem;
       height: 4.25rem;
-      fill: #014e01; /* Farbe hier ändern */
+      fill: #008000; /* Farbe hier ändern */
       cursor: pointer;
     }
 
     .icon:hover {
-      fill: #013801;
+      fill: #006000;
     }
 
     .meal {
@@ -210,7 +212,7 @@ main {
     .selection-icon {
       width: 1rem;
       height: 1rem;
-      fill: #006600;
+      fill: #008000;
     }
   }
 }
@@ -225,38 +227,35 @@ footer {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: #777676;
+  background-color: #403b3b;
 
   .footer-content {
     width: 100%;
     height: 100%;
 
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center; */
-    padding: 40px 0;
+    padding: 40px 300px;
 
     > div {
       display: flex;
-      justify-content: space-evenly;
+      justify-content: space-between;
       align-items: center;
 
-      img {
-        width: 64px;
-        height: 64px;
-        color: white;
+      >a {
+        img {
+          width: 4.5rem;
+          height: 4.5rem;
+        }
       }
 
       .footer-links {
         display: flex;
-
-        column-gap: 25px;
+        column-gap: 1.25rem;
 
         .footer-link {
-          font-size: 1.25rem;
+          font-size: 1.5rem;
           font-weight: bold;
 
-          color: white;
+          color: #008000;
         }
         .footer-link:hover {
           text-decoration: underline;
