@@ -105,6 +105,13 @@ section {
 
 /* #region header */
 
+#nav-home {
+  color: #008000;
+  text-decoration: underline #008000;
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.6rem;
+}
+
 .header-section {
   box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
 
@@ -301,6 +308,14 @@ footer {
 /* #region contactpage */
 
 /* #region contact section hero */
+
+#nav-contact {
+  color: #008000;
+  text-decoration: underline #008000;
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.6rem;
+}
+
 .contact-section-hero {
   .content {
     > div {
