@@ -21,12 +21,12 @@
 
 /* #region Default Container */
 body {
-  /* width: 100%;
-  height: 100%; */
+  width: 100%;
+  height: 100%;
   /* font-family: "Raleway", sans-serif; */
   font-size: 62.5%; /*62.5% von 16px = 10px = 1rem (was meinst dazu?)*/
   color: #000000; /* Schriftfarbe */
-  /* min-height: 100vh; */
+  min-height: 100vh;
 }
 
 main {
@@ -36,7 +36,7 @@ main {
 main {
   width: 100%;
   height: 100%;
-  /* min-height: 85dvh; Später überdenken */
+  min-height: 85dvh; /*Später überdenken*/
 }
 
 /* section {
@@ -69,6 +69,7 @@ main {
   width: 15rem;
   height: 15rem;
   border-radius: 0.3rem;
+  box-shadow: 1px 4px 12px -4px rgba(0, 0, 0, 0.3);
 }
 
 .d-none {
@@ -80,13 +81,17 @@ main {
 /* #region header */
 
 .header-section {
-  justify-content: space-evenly;
-  padding: 1.5rem 0 1.5rem 0;
-
   box-shadow: 0 4px 8px -4px rgba(0, 0, 0, 0.3);
+
+  .header-box {
+    justify-content: space-evenly;
+    align-items: end;
+    padding-top: 1.5rem;
+  }
 
   .logo-link {
     color: #000000;
+    padding-bottom: 1.5rem;
   }
 
   .header-logo-box {
@@ -105,12 +110,25 @@ main {
     gap: 4rem;
     font-size: 1.25rem;
     font-weight: bold;
+    padding-bottom: 0.5rem;
+
+    li {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+
+      .nav-icon {
+        width: 1.5rem;
+        height: 1.5rem;
+      }
+    }
 
     .link {
       color: #000000;
     }
 
     .link:hover {
+      color: rgb(207, 0, 0);
       text-decoration: underline;
       text-decoration-color: rgb(207, 0, 0);
       text-decoration-thickness: 0.25rem;
@@ -127,8 +145,6 @@ main {
 
 .welcome-section {
   padding: 4.5rem 0 2rem 0;
-  border-left: 0.25rem solid rgb(241, 241, 241);
-  border-right: 0.25rem solid rgb(241, 241, 241);
 
   h1 {
     text-align: center;
@@ -137,7 +153,7 @@ main {
 
   .meals-selection {
     justify-content: space-evenly;
-    padding-top: 2.5rem;
+    padding: 3.5rem 0 2.5rem 0;
 
     .meal {
       gap: 0.5rem;
@@ -155,7 +171,7 @@ main {
 /* #region inspiration-section */
 
 .inspiration-section {
-  padding: 4.5rem 0 0 0;
+  padding: 4.5rem 0 4.5rem 0;
   background-color: rgb(241, 241, 241);
 
   h2 {
@@ -166,7 +182,7 @@ main {
   .meals-selection {
     justify-content: space-evenly;
     align-items: center;
-    padding-top: 4.5rem;
+    padding: 4.5rem 0 4.5rem 0;
 
     .icon {
       width: 4.25rem;
@@ -191,7 +207,6 @@ main {
 
   .meal-selection-icons {
     justify-content: center;
-    padding-top: 1.5rem;
     .selection-icon {
       width: 1rem;
       height: 1rem;
@@ -210,21 +225,20 @@ footer {
   height: 100%;
   display: flex;
   justify-content: center;
-  background-color: #383838;
+  background-color: #777676;
 
   .footer-content {
     width: 100%;
-    /* height: 100%; */
+    height: 100%;
 
-    display: flex;
+    /* display: flex;
     flex-direction: column;
-    padding: 40px 120px;
+    justify-content: center; */
+    padding: 40px 0;
 
     > div {
-      width: 100%;
-
       display: flex;
-      justify-content: space-between;
+      justify-content: space-evenly;
       align-items: center;
 
       img {
@@ -239,10 +253,10 @@ footer {
         column-gap: 25px;
 
         .footer-link {
-          font-size: 28px;
+          font-size: 1.25rem;
           font-weight: bold;
 
-          color: #338533;
+          color: white;
         }
         .footer-link:hover {
           text-decoration: underline;
