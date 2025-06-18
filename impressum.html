@@ -8,91 +8,252 @@
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <!--  #region header-->
+    <header class="header-section">
+      <div class="header-box content flex-h">
+        <a class="logo-link" href="index.html"
+          ><div class="header-logo-box flex-h">
+            <img class="logo" src="img/logo_small.png" />
+            <span>Kochwelt</span>
+          </div></a
+        >
+
+        <nav>
+          <ul class="flex-h">
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a class="link" href="index.html"> Startseite </a>
+            </li>
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <rect
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  x="48"
+                  y="80"
+                  width="416"
+                  height="384"
+                  rx="48"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  d="M128 48v32M384 48v32"
+                />
+                <rect
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  x="112"
+                  y="224"
+                  width="96"
+                  height="96"
+                  rx="13"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  d="M464 160H48"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a class="link" href="#"> Rezept des Tages</a>
+            </li>
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M441.6 171.61L266.87 85.37a24.57 24.57 0 00-21.74 0L70.4 171.61A40 40 0 0048 207.39V392c0 22.09 18.14 40 40.52 40h335c22.38 0 40.52-17.91 40.52-40V207.39a40 40 0 00-22.44-35.78z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M397.33 368L268.07 267.46a24 24 0 00-29.47 0L109.33 368M309.33 295l136-103M61.33 192l139 105"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a class="link" href="contact.html"> Kontakt</a>
+            </li>
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M176 416v64M80 32h192a32 32 0 0132 32v412a4 4 0 01-4 4H48h0V64a32 32 0 0132-32zM320 192h112a32 32 0 0132 32v256h0-160 0V208a16 16 0 0116-16z"
+                />
+                <path
+                  d="M98.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79z"
+                />
+                <ellipse
+                  cx="256"
+                  cy="176"
+                  rx="15.95"
+                  ry="16.03"
+                  transform="rotate(-45 255.99 175.996)"
+                />
+                <path
+                  d="M258.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM400 400a16 16 0 1016 16 16 16 0 00-16-16zM400 320a16 16 0 1016 16 16 16 0 00-16-16zM400 240a16 16 0 1016 16 16 16 0 00-16-16zM336 400a16 16 0 1016 16 16 16 0 00-16-16zM336 320a16 16 0 1016 16 16 16 0 00-16-16zM336 240a16 16 0 1016 16 16 16 0 00-16-16z"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a id="nav-impressum" class="link" href="#"> Impressum</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--  #endregion header-->
 
     <!-- #region Impressum -->
-    <div>
-      <h1 class="adsimple-323016059">Impressum</h1>
-      <p class="adsimple-323016059">Informationen über den Diensteanbieter.</p>
-      <p class="adsimple-323016059">Marcel Buchmann</p>
-      <p class="adsimple-323016059">
-        Werftendensteig 1, <br />12347 Berlin, <br />Deutschland
-      </p>
-      <p>
-        <strong>Alternative Adresse</strong>
-        <br />Tassilopl. 25, 81541 München<br />
-        Deutschland
-      </p>
-      <div style="display: none"></div>
-      <p><strong>Tel.:</strong> 017662799766</p>
-      <div style="display: none"></div>
-      <div style="display: none"></div>
-      <div style="display: none"></div>
-      <h2
-        id="eu-streitschlichtung"
-        class="adsimple-323016059 fusion-responsive-typography-calculated"
-        data-fontsize="24"
-        style="--fontSize: 24; line-height: 1.5; --minFontSize: 24"
-        data-lineheight="36px"
-      >
-        EU-Streitschlichtung
-      </h2>
-      <p class="adsimple-323016059">
-        Gemäß Verordnung über Online-Streitbeilegung in
-        Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die
-        Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br />
-        Verbraucher haben die Möglichkeit, Beschwerden an die Online
-        Streitbeilegungsplattform der Europäischen Kommission unter
-        <a
-          class="adsimple-323016059"
-          href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE"
-          target="_blank"
-          rel="follow noopener"
-          >https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE</a
-        >
-        zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb in
-        unserem Impressum.
-      </p>
-      <p class="adsimple-323016059">
-        Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder
-        verpflichtet sind, an Streitbeilegungsverfahren vor einer
-        Verbraucherschlichtungsstelle teilzunehmen.
-      </p>
-      <h2
-        id="bildernachweis"
-        class="adsimple-323016059 fusion-responsive-typography-calculated"
-        data-fontsize="24"
-        style="--fontSize: 24; line-height: 1.5; --minFontSize: 24"
-        data-lineheight="36px"
-      >
-        Bildernachweis
-      </h2>
-      <p class="adsimple-323016059">
-        Die Bilder, Fotos und Grafiken auf dieser Webseite sind urheberrechtlich
-        geschützt.
-      </p>
-      <p>
-        <strong>Die Bilderrechte liegen bei:</strong>
-        <br />
-        <a href="https://unsplash.com/de/" target="_blank" rel="noopener"
-          >https://unsplash.com/de/</a
-        >@johnnyhammer<br />
-        <a href="https://unsplash.com/de" target="_blank" rel="noopener"
-          >https://unsplash.com/de</a
-        >
-      </p>
-      <div style="display: none"></div>
-      <div style="display: none"></div>
-      <p>Alle Texte sind urheberrechtlich geschützt.</p>
-      <p style="margin-top: 15px">
-        Quelle: Erstellt mit dem
-        <a
-          href="https://www.adsimple.de/impressum-generator/"
-          title="Impressum Generator Deutschland von AdSimple"
-          >Impressum Generator</a
-        >
-        von AdSimple
-      </p>
-    </div>
+    <section class="section-impressum flex-v">
+      <div class="content flex-v">
+        <div>
+          <h1>Impressum</h1>
+          <p>
+            Informationen über den Diensteanbieter.
+          </p>
+          <p>Marcel Buchmann</p>
+          <p>
+            Franz-Körner-Straße 16, <br />12347 Berlin, <br />Deutschland
+          </p>
+
+          <p>
+            <strong>Alternative Adresse</strong>
+            <br />Tassilopl. 25, 81541 München<br />
+            Deutschland
+          </p>
+          <p>
+            <strong>Tel.:</strong> 
+            017662799766
+          </p>
+          <div class="seperator"></div>
+          <h2
+            id="eu-streitschlichtung"
+            class="adsimple-323016059 fusion-responsive-typography-calculated"
+            data-fontsize="24"
+            style="--fontSize: 24; line-height: 1.5; --minFontSize: 24"
+            data-lineheight="36px"
+          >
+            EU-Streitschlichtung
+          </h2>
+          <p>
+            Gemäß Verordnung über Online-Streitbeilegung in
+            Verbraucherangelegenheiten (ODR-Verordnung) möchten wir Sie über die
+            Online-Streitbeilegungsplattform (OS-Plattform) informieren.<br />
+            Verbraucher haben die Möglichkeit, Beschwerden an die Online
+            Streitbeilegungsplattform der Europäischen Kommission unter
+            <a
+              href="https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE"
+              target="_blank"
+              rel="follow noopener"
+              >https://ec.europa.eu/consumers/odr/main/index.cfm?event=main.home2.show&amp;lng=DE</a
+            >
+            zu richten. Die dafür notwendigen Kontaktdaten finden Sie oberhalb
+            in unserem Impressum.
+          </p>
+          <p>
+            Wir möchten Sie jedoch darauf hinweisen, dass wir nicht bereit oder
+            verpflichtet sind, an Streitbeilegungsverfahren vor einer
+            Verbraucherschlichtungsstelle teilzunehmen.
+          </p>
+          <h2
+            id="bildernachweis"
+            class="adsimple-323016059 fusion-responsive-typography-calculated"
+            data-fontsize="24"
+            style="--fontSize: 24; line-height: 1.5; --minFontSize: 24"
+            data-lineheight="36px"
+          >
+            Bildernachweis
+          </h2>
+          <p>
+            Die Bilder, Fotos und Grafiken auf dieser Webseite sind
+            urheberrechtlich geschützt.
+          </p>
+          <p>
+            <strong>Die Bilderrechte liegen bei:</strong>
+            <br />
+            <a href="https://unsplash.com/de/" target="_blank" rel="noopener"
+              >https://unsplash.com/de/</a
+            >@johnnyhammer<br />
+            <a href="https://unsplash.com/de" target="_blank" rel="noopener"
+              >https://unsplash.com/de</a
+            >
+          </p>
+          <p>Alle Texte sind urheberrechtlich geschützt.</p>
+          <p style="margin-top: 15px">
+            Quelle: Erstellt mit dem
+            <a
+              href="https://www.adsimple.de/impressum-generator/"
+              title="Impressum Generator Deutschland von AdSimple"
+              >Impressum Generator</a
+            >
+            von AdSimple
+          </p>
+        </div>
+      </div>
+    </section>
     <!-- #endregion -->
 
     <!-- #region Footer -->

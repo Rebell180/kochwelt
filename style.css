@@ -146,18 +146,18 @@ section {
         width: 1.5rem;
         height: 1.5rem;
       }
-    }
+    
+      .link {
+        color: #000000;
+      }
 
-    .link {
-      color: #000000;
-    }
-
-    .link:hover {
-      color: #008000;
-      text-decoration: underline;
-      text-decoration-color: #008000;
-      text-decoration-thickness: 0.25rem;
-      text-underline-offset: 0.6rem;
+      .link:hover {
+        color: #008000;
+        text-decoration: underline;
+        text-decoration-color: #008000;
+        text-decoration-thickness: 0.25rem;
+        text-underline-offset: 0.6rem;
+      }
     }
   }
 }
@@ -453,6 +453,59 @@ footer {
 */
 
 /* #region impressum page */
+
+/* #region header */
+
+#nav-impressum {
+  color: #008000;
+  text-decoration: underline #008000;
+  text-decoration-thickness: 0.25rem;
+  text-underline-offset: 0.6rem;
+}
+
+/* #endregion header */
+
+/* #region content impressum */
+.section-impressum {
+  width: 100%;
+
+  .content {
+    width: 100%;
+
+    padding: 4.5rem 15rem 2rem 15rem;
+
+    >div {
+      width: 100%;
+
+      h1 {
+        text-align: center;
+        font-size: 2.5rem;
+        padding-bottom: 4rem;
+      }
+
+      h2 {
+        font-size: 1.75rem;
+        padding-top: 3rem;
+      }
+
+      p {
+        font-size: 1.25rem;
+        padding-bottom: 0.25rem;
+        strong {
+          font-weight: 1.5rem;
+        }
+
+        a {
+          color: #008000;
+          font-weight: bold;
+          text-decoration-thickness: 0.25rem;
+          text-underline-offset: 0.6rem;
+        }
+      }
+    }
+  }
+}
+/* #endregion content impressum */
 
 /* #endregion */
 
