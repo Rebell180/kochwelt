@@ -1,114 +1,277 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Kochwelt - Kontakt</title>
 
-    <link rel="stylesheet" href="./style.css">
-    <link rel="stylesheet" href="./style-contact.css">
-</head>
-<body beforeunload="init()">
+    <link rel="stylesheet" href="./style.css" />
+    <link rel="stylesheet" href="./style-contact.css" />
+  </head>
+  <body beforeunload="init()">
+    <!--  #region header-->
+    <header class="header-section">
+      <div class="header-box content flex-h">
+        <a class="logo-link" href="#"
+          ><div class="header-logo-box flex-h">
+            <img class="logo" src="img/logo_small.png" />
+            <span>Kochwelt</span>
+          </div></a
+        >
+
+        <nav>
+          <ul class="flex-h">
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M80 212v236a16 16 0 0016 16h96V328a24 24 0 0124-24h80a24 24 0 0124 24v136h96a16 16 0 0016-16V212"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M480 256L266.89 52c-5-5.28-16.69-5.34-21.78 0L32 256M400 179V64h-48v69"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a class="link" href="#"> Startseite </a>
+            </li>
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <rect
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  x="48"
+                  y="80"
+                  width="416"
+                  height="384"
+                  rx="48"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  d="M128 48v32M384 48v32"
+                />
+                <rect
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  x="112"
+                  y="224"
+                  width="96"
+                  height="96"
+                  rx="13"
+                />
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  stroke-linecap="round"
+                  d="M464 160H48"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a class="link" href="#"> Rezept des Tages</a>
+            </li>
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  d="M441.6 171.61L266.87 85.37a24.57 24.57 0 00-21.74 0L70.4 171.61A40 40 0 0048 207.39V392c0 22.09 18.14 40 40.52 40h335c22.38 0 40.52-17.91 40.52-40V207.39a40 40 0 00-22.44-35.78z"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+                <path
+                  d="M397.33 368L268.07 267.46a24 24 0 00-29.47 0L109.33 368M309.33 295l136-103M61.33 192l139 105"
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a class="link" href="#"> Kontakt</a>
+            </li>
+            <li>
+              <!-- #region nav-icon -->
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                class="nav-icon"
+                viewBox="0 0 512 512"
+              >
+                <path
+                  fill="none"
+                  stroke="currentColor"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                  stroke-width="32"
+                  d="M176 416v64M80 32h192a32 32 0 0132 32v412a4 4 0 01-4 4H48h0V64a32 32 0 0132-32zM320 192h112a32 32 0 0132 32v256h0-160 0V208a16 16 0 0116-16z"
+                />
+                <path
+                  d="M98.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM98.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 191.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM178.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 431.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 351.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM258.08 271.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79z"
+                />
+                <ellipse
+                  cx="256"
+                  cy="176"
+                  rx="15.95"
+                  ry="16.03"
+                  transform="rotate(-45 255.99 175.996)"
+                />
+                <path
+                  d="M258.08 111.87a16 16 0 1113.79-13.79 16 16 0 01-13.79 13.79zM400 400a16 16 0 1016 16 16 16 0 00-16-16zM400 320a16 16 0 1016 16 16 16 0 00-16-16zM400 240a16 16 0 1016 16 16 16 0 00-16-16zM336 400a16 16 0 1016 16 16 16 0 00-16-16zM336 320a16 16 0 1016 16 16 16 0 00-16-16zM336 240a16 16 0 1016 16 16 16 0 00-16-16z"
+                />
+              </svg>
+              <!-- #endregion nav-icon -->
+
+              <a class="link" href="#"> Impressum</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </header>
+    <!--  #endregion header-->
 
     <!-- #region Section Contact Hero -->
     <section class="contact-section-hero">
-        <div class="content flex-v">
-            <div class="flex-h">
-                <img src="./img/logo_small.png" alt="">
-                <h2>Kontakt</h2>
-            </div>
-            <!-- <h2>Kontakt</h2> -->
-
-            <p>
-                Sie haben Fragen, Beschwerden oder anderweitige Schwierigkeiten oder wollen uns Ihr Feedback übermitteln? 
-                Dann zögern Sie nicht uns zu kontaktieren. Wir sind stets bemüht, Ihre Nachricht zeitnahe zu beantworten. 
-                Füllen Sie dafür einfach das folgende Formular aus und klicken Sie auf den "Senden"-Button.  
-            </p>
+      <div class="content flex-v">
+        <div class="flex-h">
+          <img src="./img/logo_small.png" alt="" />
+          <h2>Kontakt</h2>
         </div>
+        <!-- <h2>Kontakt</h2> -->
+
+        <p>
+          Sie haben Fragen, Beschwerden oder anderweitige Schwierigkeiten oder
+          wollen uns Ihr Feedback übermitteln? Dann zögern Sie nicht uns zu
+          kontaktieren. Wir sind stets bemüht, Ihre Nachricht zeitnahe zu
+          beantworten. Füllen Sie dafür einfach das folgende Formular aus und
+          klicken Sie auf den "Senden"-Button.
+        </p>
+      </div>
     </section>
     <!-- #endregion -->
-
 
     <!-- #region Section Contact Form -->
     <section class="contact-section-form">
-        <div class="content flex-h">
+      <div class="content flex-h">
+        <!-- #region Part Find us -->
+        <div class="find-us-content flex-v">
+          <h2>Find us</h2>
 
-            <!-- #region Part Find us -->
-            <div class="find-us-content flex-v">
-
-                <h2>Find us</h2>
-
-                <div class="flex-h">
-                    <img src="./img/map_marker.svg" alt="">
-                    <div class="flex-v">
-                        <span>Alexanderplatz 1</span>
-                        <span>10178 Berlin</span>
-                    </div>
-                </div>
-
-                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d510.35668299476555!2d13.410233023418096!3d52.52114455934943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1750174128795!5m2!1sde!2sde" 
-                style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-            
+          <div class="flex-h">
+            <img src="./img/map_marker.svg" alt="" />
+            <div class="flex-v">
+              <span>Alexanderplatz 1</span>
+              <span>10178 Berlin</span>
             </div>
-            <!-- #endregion -->
+          </div>
 
-            <!-- #region Part Form content -->
-            <div id ="contact-form" class="form-content flex-v ">
-                    
-                <form class="flex-v">
-                    <label for="contact-name">Name:</label>
-                    <input id="contactName" name="contact-name"type="text" required>
-                        
-                    <label for="contact-mail">E-Mail:</label>
-                    <input id="contact-mail" name="contact-mail" type="email" required>
-                        
-                    <label for="contact-msg">Nachricht: </label>
-                    <textarea id="contact-msg" name="contact-msg" rows="8" cols="70" required></textarea>
-                        
-                    <input onclick="sendEmail()" class="form-btn" type="submit">
-                        
-                </form>
-            </div>
-            <!-- #endregion -->
-                
-            <!-- #region Section Email was send -->
-            <div id ="email-send-banner" class="email-send-content flex-h d-none">
-                <div class="content flex-h">
-                    <div class="flex-h">
-                        <p>Deine E-Mail wurde erfolgreich versendet.</p>
-                    </div>
-                </div>
-            </div>
-            <!-- #endregion -->
-
-
+          <iframe
+            src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d510.35668299476555!2d13.410233023418096!3d52.52114455934943!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sde!2sde!4v1750174128795!5m2!1sde!2sde"
+            style="border: 0"
+            allowfullscreen=""
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"
+          ></iframe>
         </div>
+        <!-- #endregion -->
+
+        <!-- #region Part Form content -->
+        <div id="contact-form" class="form-content flex-v">
+          <form class="flex-v">
+            <label for="contact-name">Name:</label>
+            <input id="contactName" name="contact-name" type="text" required />
+
+            <label for="contact-mail">E-Mail:</label>
+            <input
+              id="contact-mail"
+              name="contact-mail"
+              type="email"
+              required
+            />
+
+            <label for="contact-msg">Nachricht: </label>
+            <textarea
+              id="contact-msg"
+              name="contact-msg"
+              rows="8"
+              cols="70"
+              required
+            ></textarea>
+
+            <input onclick="sendEmail()" class="form-btn" type="submit" />
+          </form>
+        </div>
+        <!-- #endregion -->
+
+        <!-- #region Section Email was send -->
+        <div id="email-send-banner" class="email-send-content flex-h d-none">
+          <div class="content flex-h">
+            <div class="flex-h">
+              <p>Deine E-Mail wurde erfolgreich versendet.</p>
+            </div>
+          </div>
+        </div>
+        <!-- #endregion -->
+      </div>
     </section>
     <!-- #endregion -->
 
-
-
-
     <!-- #region Footer -->
     <footer class="flex-h">
-        <div class="footer-content">
-            <div>
-                <!-- Img führt zur Startseite-->
-                <a href="./index.html">
-                    <img src="./img/logo_small_white.png" alt="">
-                </a>
-                <div class="footer-links">
-                    <a class="footer-link" href="./contact.html" >Kontakt</a>
-                    <a class="footer-link" href="./impressum.html" >Impressum</a>
-                    <a class="footer-link" href="./dsgvo.html" >Datenschutz</a>
-                </div>
-            </div>
-            <div></div>
+      <div class="footer-content">
+        <div>
+          <!-- Img führt zur Startseite-->
+          <a href="./index.html">
+            <img src="./img/logo_small_white.png" alt="" />
+          </a>
+          <div class="footer-links">
+            <a class="footer-link" href="./contact.html">Kontakt</a>
+            <a class="footer-link" href="./impressum.html">Impressum</a>
+            <a class="footer-link" href="./dsgvo.html">Datenschutz</a>
+          </div>
         </div>
+        <div></div>
+      </div>
     </footer>
     <!-- #endregion -->
 
-
     <script src="./script-contact.js" defer></script>
-</body>
+  </body>
 </html>
