@@ -229,9 +229,9 @@ section {
 
     .meal {
       gap: 0.5rem;
+      align-items: center;
 
       .meal-name {
-        text-align: center;
         font-size: 1.8rem;
       }
     }
