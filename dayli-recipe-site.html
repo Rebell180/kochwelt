@@ -3,12 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-
-    <!-- PNG-Icon Tab-->
-    <link rel="icon" type="image/png" href="img/logo_small.png" />
-
     <link rel="stylesheet" href="style.css" />
-    <title>Kochwelt</title>
+    <title>Rezept des Tages</title>
   </head>
   <body>
     <!--  #region header-->
@@ -49,7 +45,7 @@
               </svg>
               <!-- #endregion nav-icon -->
 
-              <a id="nav-home" class="link" href="index.html"> Startseite </a>
+              <a class="link" href="index.html"> Startseite </a>
             </li>
             <li>
               <!-- #region nav-icon -->
@@ -163,158 +159,68 @@
               </svg>
               <!-- #endregion nav-icon -->
 
-              <a class="link" href="#"> Impressum</a>
+              <a class="link" href="impressum.html"> Impressum</a>
             </li>
           </ul>
         </nav>
       </div>
     </header>
     <!--  #endregion header-->
-    <!-- #region main -->
     <main>
-      <!-- #region welcome-section -->
-      <section class="welcome-section">
-        <h1>Willkommen auf Kochwelt</h1>
-        <div class="meals-selection flex-h content">
-          <div class="meal flex-v">
-            <span class="meal-name">Frühstück</span>
-            <!-- hier link zur section/seite für Frühstück meals einfügen -->
-            <a href="#"
-              ><img
-                class="meals-picture"
-                src="img/food/Breakfast/breakfast.jpg"
-            /></a>
-          </div>
-          <div class="meal flex-v">
-            <span class="meal-name">Mittag</span>
-            <!-- hier link zur section/seite für Mittag meals einfügen -->
-            <a href="#"
-              ><img class="meals-picture" src="img/food/Main Meal/lunch.jpg"
-            /></a>
-          </div>
-          <div class="meal flex-v">
-            <span class="meal-name">Dessert</span>
-            <!-- hier link zur section/seite für Desserts einfügen -->
-            <a href="#"
-              ><img class="meals-picture" src="img/food/Desserts/dessert.jpg"
-            /></a>
+      <!-- #region hero-section -->
+      <section class="hero-section flex-h">
+        <div class="hero-box content flex-h">
+          <img class="hero-image" src="img/food/Main Meal/Hähnchencurry.jpg" />
+          <div class="hero-description">
+            <h2>Hähnchencurry</h2>
+            <p>
+              🌶️ <strong>Aromatisch, cremig und einfach gut:</strong><br />
+              Dieses Hähnchencurry bringt mit seiner würzigen Kokos-Tomaten-Soße
+              und zarten Hähnchenstücken ein Stück Indien auf deinen Teller –
+              ganz ohne komplizierte Zubereitung. Perfekt für ein schnelles
+              Feierabendgericht oder ein gemütliches Abendessen mit Freunden.
+              Serviert mit Reis oder Naan ist es ein echter Genuss für alle
+              Curryfans!
+            </p>
+            <button>Rezept öffnen</button>
           </div>
         </div>
       </section>
-      <!-- #endregion welcome-section -->
-
-      <!-- #region inspiration-section -->
-      <section class="inspiration-section">
-        <h2>Inspiration gefällig?</h2>
-        <div class="meals-selection flex-h content">
-          <!-- HTML -->
-          <!-- HTML -->
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M256 48C141.13 48 48 141.13 48 256s93.13 208 208 208 
-              208-93.13 208-208S370.87 48 256 48zm35.31 292.69a16 
-              16 0 11-22.62 22.62l-96-96a16 16 0 010-22.62l96-96a16 
-              16 0 0122.62 22.62L206.63 256z"
-            />
-          </svg>
-
-          <div class="meal flex-v">
-            <!-- hier link zum rezept mit einfügen -->
-            <!-- hier später img austauschen mit den rezept bild -->
-            <a href="recipe-sites-Henry/Hänchencurry.html"
-              ><img
-                class="meals-picture"
-                src="img/food/Main Meal/Hähnchencurry.jpg"
-            /></a>
-            <span class="meal-name">Hähnchencurry</span>
+      <!-- #endregion hero-section -->
+      <!-- #region something-new-section -->
+      <section class="something-new-section">
+        <h2>Lust auf was Neues?</h2>
+        <div class="something-new-container flex-h">
+          <div class="meal-box flex-h">
+            <a href="#" class="flex-h"
+              ><img class="meals-picture" src="img/food/Desserts/Donuts.jpg" />
+              <span>Donut</span></a
+            >
           </div>
-          <div class="meal flex-v">
-            <!-- hier link zum rezept mit einfügen -->
-            <!-- hier später img austauschen mit den rezept bild -->
-            <a href="#">
-              <img
-                class="meals-picture"
-                src="img/food/Desserts/himbeer-kuchen.jpg"
-            /></a>
-            <span class="meal-name">Himbeerkuchen</span>
-          </div>
-          <div class="meal flex-v">
-            <!-- hier link zum rezept mit einfügen -->
-            <!-- hier später img austauschen mit den rezept bild -->
-            <a href="#"
+          <div class="meal-box flex-h">
+            <a href="#" class="flex-h"
               ><img
                 class="meals-picture"
                 src="img/food/Breakfast/sandwich egg.jpg"
-            /></a>
-            <span class="meal-name">Eiersandwich</span>
+              />
+              <span>Eiersandwich</span></a
+            >
           </div>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="icon"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M48 256c0 114.87 93.13 208 208 208s208-93.13 
-              208-208S370.87 48 256 48 48 141.13 48 256zm257.37 0l-84.68-84.69a16 16 0 
-              0122.62-22.62l96 96a16 16 0 010 22.62l-96 96a16 16 0 01-22.62-22.62z"
-            />
-          </svg>
-        </div>
-
-        <!-- hier später ne funktion um durch die svgs zu schalten mit farbänderung. (fürs wechseln zwischen rezepten) -->
-        <div class="meal-selection-icons flex-h">
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="selection-icon"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="selection-icon"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208z"
-            />
-          </svg>
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            class="selection-icon"
-            viewBox="0 0 512 512"
-          >
-            <path
-              d="M256 464c-114.69 0-208-93.31-208-208S141.31 48 256 48s208 93.31 208 208-93.31 208-208 208z"
-            />
-          </svg>
+          <div class="meal-box flex-h">
+            <a href="#" class="flex-h"
+              ><img
+                class="meals-picture"
+                src="img/food/Desserts/Eierkuchen.jpg"
+              />
+              <span>Eierkuchen</span></a
+            >
+          </div>
         </div>
       </section>
-      <!-- #endregion inspiration-section -->
+      <!-- #endregion something-new-section -->
+      <section class="random-info-section">
+        <h2>Was ist besser?</h2>
+      </section>
     </main>
-    <!-- #endregion main -->
-    <!-- #region Footer -->
-    <footer class="flex-h">
-      <div class="footer-content content">
-        <div>
-          <!-- Img führt zur Startseite-->
-          <a href="./index.html">
-            <img src="img/logo_small_white.png" alt="" />
-          </a>
-          <div class="footer-links">
-            <a class="footer-link" href="./contact.html">Kontakt</a>
-            <a class="footer-link" href="./impressum.html">Impressum</a>
-            <a class="footer-link" href="./dsgvo.html">Datenschutz</a>
-          </div>
-        </div>
-      </div>
-    </footer>
-    <!-- #endregion -->
   </body>
 </html>
