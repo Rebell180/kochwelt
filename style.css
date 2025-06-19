@@ -640,13 +640,18 @@ footer {
         margin: 1rem 0;
       }
 
-      button {
+      .button {
+        display: inline-block;
         margin-top: 4%;
         font-size: 1rem;
         border-style: none;
         padding: 0.76rem 4rem;
         background-color: #008000;
         color: white;
+      }
+
+      .button:hover {
+        background-color: #017201;
       }
     }
   }
@@ -667,13 +672,15 @@ footer {
   }
 
   .something-new-container {
-    justify-content: space-around;
+    justify-content: space-between;
     .meal-box {
       a {
         flex-direction: column;
         align-items: center;
+        gap: 1rem;
         span {
           font-size: 1.5rem;
+          font-weight: bold;
         }
       }
     }
@@ -681,3 +688,30 @@ footer {
 }
 
 /* #endregion Something-New-Section */
+
+.random-info-section {
+  padding: 2rem 0 4rem;
+  h2 {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+  }
+
+  .info-text-box {
+    justify-content: space-between;
+    align-items: center;
+    gap: 5%;
+    p {
+      strong {
+        display: inline-block;
+        margin-bottom: 1rem;
+      }
+      font-size: 1.25rem;
+    }
+    justify-content: center;
+    .info-image {
+      width: 5rem;
+      height: 5rem;
+    }
+  }
+}
