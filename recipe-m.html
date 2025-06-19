@@ -203,8 +203,8 @@
         <div class="content flex-v">
           <div class="calc-container flex-h">
             <span>Zutaten für</span>
-            <input id="inp-portion" type="number" min="1" max="200" />
-            <button id="btn-portion">Portionen</button>
+            <input onchange="recalculate()" id="inp-portion" type="number" min="1" max="20" />
+            <button onclick="recalculate()" id="btn-portion">Portionen</button>
           </div>
 
           <div class="recipe-ingredients">
