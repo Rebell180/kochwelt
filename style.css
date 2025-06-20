@@ -4,6 +4,7 @@
 * ================
 */
 
+/* #region Default styling */
 * {
   padding: 0;
   margin: 0;
@@ -35,14 +36,14 @@ body {
   font-size: calc(16px + 0.75dvw);
 
   color: #000000;
-  min-height: 100dvh; /*TODO Footer nach unten bringen */
+  min-height: 100dvh;
 }
 
 main {
   flex: 1;
   width: 100%;
   height: 100%;
-  min-height: 85dvh; /*Später überdenken*/
+  min-height: 85dvh;
 }
 
 section {
@@ -58,7 +59,7 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
-  
+
   padding: 0px 10dvw;
 
 
@@ -100,6 +101,8 @@ h3 {
 }
 
 /* #endregion */
+
+/* #endregion Default styling */
 
 /**
 * ====================
@@ -253,23 +256,25 @@ h3 {
 /* #region Footer */
 footer {
   width: 100%;
-  height: 100%;
+  height: 10rem;
+  /* height: 100%; */
   display: flex;
   justify-content: center;
+  align-items: center;
   background-color: #403b3b;  
+
 
   .footer-content {
     width: 100%;
-    height: 100%;
-
-    padding: 4rem 15rem;
+    align-items: center;
 
     > div {
-      display: flex;
+      height: 100%;
       justify-content: space-between;
       align-items: center;
 
       > a {
+        
         img {
           width: 4.5rem;
           height: 4.5rem;
@@ -278,7 +283,7 @@ footer {
 
       .footer-links {
         display: flex;
-        column-gap: 1.25rem;
+        column-gap: 1dvw;
 
         .footer-link {
           font-weight: bold;
@@ -833,6 +838,8 @@ footer {
 * ====================
 */
 
+/* #region Dayli Recipe Page */
+
 /* #region Hero-Section */
 .hero-section {
   padding: 4rem 1rem;
@@ -930,3 +937,5 @@ footer {
     }
   }
 }
+
+/* #endregion Dayli Recipe Page */

@@ -7,9 +7,10 @@
     <!-- PNG-Icon Tab-->
     <link rel="icon" type="image/png" href="img/logo_small.png" />
 
-    <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="./fonts/fonts.css">
+    <link rel="stylesheet" href="style.css" />
     <title>Kochwelt</title>
+
   </head>
   <body>
     <!--  #region header-->
@@ -50,7 +51,7 @@
               </svg>
               <!-- #endregion nav-icon -->
 
-              <a id="nav-home" class="link" href="index.html"> Startseite </a>
+              <a id="nav-home" class="link" href="index.html">Startseite </a>
             </li>
             <li>
               <!-- #region nav-icon -->
@@ -100,11 +101,7 @@
                 />
               </svg>
               <!-- #endregion nav-icon -->
-              <!-- TODO -->
-              <!-- <a class="link" href="dayli-recipe-site.html">
-                Rezept des Tages</a
-              > -->
-              <a class="link" href="./recipe-m.html?id=10002"> Rezept des Tages</a>
+              <a class="link" href="dayli-recipe-site.html">Rezept des Tages</a>
             </li>
             <li>
               <!-- #region nav-icon -->
@@ -132,7 +129,7 @@
               </svg>
               <!-- #endregion nav-icon -->
 
-              <a class="link" href="contact.html"> Kontakt</a>
+              <a class="link" href="contact.html">Kontakt</a>
             </li>
             <li>
               <!-- #region nav-icon -->
@@ -165,7 +162,7 @@
               </svg>
               <!-- #endregion nav-icon -->
 
-              <a class="link" href="impressum.html"> Impressum</a>
+              <a class="link" href="impressum.html">Impressum</a>
             </li>
           </ul>
         </nav>
@@ -180,27 +177,22 @@
         <h1>Willkommen auf Kochwelt</h1>
         <div class="meals-selection flex-h content">
           <div class="meal flex-v">
-            <span class="meal-name">Frühstück</span>
-            <!-- hier link zur section/seite für Frühstück meals einfügen -->
-            <a href="#"
-              ><img
-                class="meals-picture"
-                src="img/food/Breakfast/breakfast.jpg"
-            /></a>
+            <span class="meal-name">Vorspeise</span>
+            <a href="./recipe-m.html?id=10001">
+              <img class="meals-picture" src="img/food/Breakfast/breakfast.jpg"/>
+            </a>
           </div>
           <div class="meal flex-v">
-            <span class="meal-name">Mittag</span>
-            <!-- hier link zur section/seite für Mittag meals einfügen -->
-            <a href="#"
+            <span class="meal-name">Hauptspeise</span>
+            <a href="./recipe-m.html?id=10002"
               ><img class="meals-picture" src="img/food/Main Meal/lunch.jpg"
             /></a>
           </div>
           <div class="meal flex-v">
             <span class="meal-name">Dessert</span>
-            <!-- hier link zur section/seite für Desserts einfügen -->
-            <a href="#"
-              ><img class="meals-picture" src="img/food/Desserts/dessert.jpg"
-            /></a>
+            <a href="./recipe-m.html?id=10003">
+              <img class="meals-picture" src="img/food/Desserts/dessert.jpg"/>
+            </a>
           </div>
         </div>
       </section>
@@ -248,13 +240,12 @@
     
     <!-- #region Footer -->
     <footer class="flex-h">
-      <div class="footer-content content">
-        <div>
-          <!-- Img führt zur Startseite-->
+      <div class="content footer-content">
+        <div class="flex-h">
           <a href="./index.html">
             <img src="img/logo_small_white.png" alt="" />
           </a>
-          <div class="footer-links">
+          <div class="footer-links flex-h">
             <a class="footer-link" href="./contact.html">Kontakt</a>
             <a class="footer-link" href="./impressum.html">Impressum</a>
             <a class="footer-link" href="./dsgvo.html">Datenschutz</a>
