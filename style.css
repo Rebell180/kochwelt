@@ -257,7 +257,6 @@ h3 {
 footer {
   width: 100%;
   height: 10rem;
-  /* height: 100%; */
   display: flex;
   justify-content: center;
   align-items: center;
@@ -611,8 +610,8 @@ footer {
   
   .content {
     width: 100%;
-    padding: 4rem 15rem 3rem 15rem;   
-
+    padding-top: 4rem;   
+    padding-bottom: 3rem;
 
     >div {
       width: 100%;
@@ -624,8 +623,9 @@ footer {
         
       .recipe-img {
         width: 100%;
-        height: 10rem;
+        height: 15rem;
         padding-bottom: 2rem;
+        object-fit: cover;
       }
         
       >div {
@@ -670,7 +670,7 @@ footer {
 
   .content {
     width: 100%;
-    padding: 0rem 15rem 3rem 15rem;   
+    padding-bottom: 3rem;   
 
     .calc-container {
       width: 100%;
@@ -761,7 +761,8 @@ footer {
       
   .content {
     width: 100%;
-    padding: 2rem 15rem 3rem 15rem;  
+    padding-top: 2rem; 
+    padding-bottom: 3rem;  
 
     .recipe-preparation {
       width: 100%;
@@ -801,7 +802,7 @@ footer {
 
   .content {
     width: 100%;
-    padding: 0rem 15rem 6rem 15rem; 
+    padding-bottom: 6rem; 
 
     h3 {
       width: 100%;
