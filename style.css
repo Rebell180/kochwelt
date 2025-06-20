@@ -100,6 +100,14 @@ h3 {
   font-size: calc(16px + 1);
 }
 
+.bg-transparent {
+  background-color: transparent;
+}
+
+.bg-lightgrey {
+  background-color: rgba(0, 0, 0, 0.1);
+}
+
 /* #endregion */
 
 /* #endregion Default styling */
@@ -591,7 +599,6 @@ footer {
 
 /* #region recipe page */
 
-
 /* #region header */
 /* #nav-recipe-of-day {
   color: #008000;
@@ -720,16 +727,6 @@ footer {
           width: 100%;
           border-radius: 8px;
         }
-        
-        tr:nth-child(even) td {
-          background-color: #ffffff;
-          color: #000000;
-        }
-        
-        tr:nth-child(odd) td {
-          background-color: #cccccc;
-          color: #000000;
-        }
 
         td {
           width: 100%;
@@ -742,7 +739,7 @@ footer {
           border-bottom-left-radius: 8px;
         }
         .td-col-2 {
-          width:100%;
+          width: 100%;
           border-top-right-radius: 8px;
           border-bottom-right-radius: 8px;
         }

@@ -90,23 +90,18 @@ function recalculate() {
     let ingredientAmount;
     let ingredient;
 
-    // clear table
-    let table = document.getElementById("tbl-ingredients").innerHTML = "";
+    document.getElementById("tbl-ingredients").innerHTML = "";
 
-    // build new table
     for(let i = 0; i < currentRecipe.ingredients.length; i++ ){
-        let backgrounds = ["#cccccc", "#ffffff"]
-        let color = i % 2
-        // get multiplied data
+        let background = "bg-transparent";
+        if (i % 2 == 0) {
+            background = "bg-lightgrey";
+        }
+
         ingredientAmount = getFormattedUnit(amount, currentRecipe.ingredients[i][0][0], currentRecipe.ingredients[i][0][1]);
         ingredient = currentRecipe.ingredients[i][1];
 
-        document.getElementById("tbl-ingredients").innerHTML += /*html*/`
-            <tr>
-                <td style="background:${backgrounds[color]}" class="td-col-1">${ingredientAmount}</td>
-                <td style="background:${backgrounds[color]}" class="td-col-2">${ingredient}</td>
-            </tr>
-        `;
+        document.getElementById("tbl-ingredients").innerHTML += getIngredientRow(i, background, ingredientAmount, ingredient);
     }
 }
 
@@ -131,6 +126,18 @@ function getFormattedUnit(amount, unitNumber, unit) {
     return `${multiplied}${formattedUnit}`;
 }
 
+// #region Templates 
+
+function getIngredientRow(i, bg, amount, name) {
+
+    return  /*html*/`
+                <tr id="ingredient${i}">
+                    <td class="td-col-1 ${bg}">${amount}</td>
+                    <td class="td-col-2 ${bg}">${name}</td>
+                </tr>
+            `;
+}
+// #endregion Templates
 
 
 init();
