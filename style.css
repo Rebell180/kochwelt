@@ -30,27 +30,16 @@
 body {
   width: 100%;
   height: 100%;
-  /*  
-    font-family: "Raleway", sans-serif; 
-    TODO - müssen noch gewählt und heruntergeladen werden
-  */
-  font-size: 62.5%;
-  /*
-    62.5% von 16px = 10px = 1rem (was meinst dazu?)
-    TODO - Scheint nicht zu funktionieren. Also die Schriftgröße passt sich nicht a
-    Laut W3 Schools -> vw (dvw?) als responsive Einheit?
-    1vw = 1% of viewport width. If the viewport is 50cm wide, 1vw is 0.5cm.
-  */
 
-  color: #000000; /* Schriftfarbe */
-  min-height: 100vh;
+  font-family: "Raleway" , sans-serif;
+  font-size: calc(16px + 0.75dvw);
+
+  color: #000000;
+  min-height: 100dvh; /*TODO Footer nach unten bringen */
 }
 
 main {
   flex: 1;
-}
-
-main {
   width: 100%;
   height: 100%;
   min-height: 85dvh; /*Später überdenken*/
@@ -69,6 +58,10 @@ section {
   justify-content: center;
   align-items: center;
   margin: 0 auto;
+  
+  padding: 0px 10dvw;
+
+
 }
 /* #endregion */
 
@@ -92,6 +85,18 @@ section {
 
 .d-none {
   display: none;
+}
+
+h1 {
+  font-size: calc(16px + 1.75);
+}
+
+h2 {
+  font-size: calc(16px + 1.25);
+}
+
+h3 {
+  font-size: calc(16px + 1);
 }
 
 /* #endregion */
@@ -131,7 +136,6 @@ section {
     justify-content: center;
     align-items: center;
     gap: 1.25rem;
-    font-size: 1.5rem;
   }
 
   .logo {
@@ -141,7 +145,6 @@ section {
 
   ul {
     gap: 4rem;
-    font-size: 1.25rem;
     font-weight: bold;
     padding-bottom: 0.5rem;
 
@@ -156,6 +159,7 @@ section {
       }
 
       .link {
+        font-size: calc(16px + 0.4dvw);
         color: #000000;
       }
 
@@ -181,7 +185,6 @@ section {
 
   h1 {
     text-align: center;
-    font-size: 2.5rem;
   }
 
   .meals-selection {
@@ -193,7 +196,6 @@ section {
 
       .meal-name {
         text-align: center;
-        font-size: 1.8rem;
       }
     }
   }
@@ -209,7 +211,6 @@ section {
 
   h2 {
     text-align: center;
-    font-size: 2rem;
   }
 
   .meals-selection {
@@ -232,9 +233,6 @@ section {
       gap: 0.5rem;
       align-items: center;
 
-      .meal-name {
-        font-size: 1.8rem;
-      }
     }
   }
 
@@ -283,7 +281,6 @@ footer {
         column-gap: 1.25rem;
 
         .footer-link {
-          font-size: 1.5rem;
           font-weight: bold;
 
           color: #008000;
@@ -328,12 +325,10 @@ footer {
         height: 72px;
       }
       h2 {
-        font-size: 72px;
         text-decoration: underline;
       }
     }
     p {
-      font-size: 24px;
       padding: 40px 160px;
       text-align: center;
     }
@@ -344,7 +339,7 @@ footer {
 /* #region contact area */
 .contact-section-form {
   width: 100%;
-  padding: 0px 50px 30px 50px;
+  /* padding: 0px 50px 30px 50px; */
 
   .content {
     width: 100%;
@@ -358,7 +353,6 @@ footer {
       padding: 0 25px;
 
       h2 {
-        font-size: 48px;
         width: 100%;
         margin-bottom: 40px;
       }
@@ -369,9 +363,6 @@ footer {
           height: 40px;
         }
 
-        span {
-          font-size: 20px;
-        }
       }
 
       iframe {
@@ -394,15 +385,12 @@ footer {
 
         label {
           width: 100%;
-          font-size: 20px;
           font-weight: bold;
           margin-bottom: 10px;
         }
 
         input {
           width: 100%;
-          /* height: 150px; */
-          font-size: 20px;
           padding: 5px;
           margin-bottom: 25px;
 
@@ -411,7 +399,6 @@ footer {
 
         textarea {
           width: 100%;
-          font-size: 20px;
           margin-bottom: 30px;
           border-radius: 8px;
           padding: 10px;
@@ -445,7 +432,6 @@ footer {
           p {
             width: 100%;
             text-align: center;
-            font-size: 32px;
             font-weight: bold;
             color: #338533;
           }
@@ -493,17 +479,14 @@ footer {
 
       h1 {
         text-align: center;
-        font-size: 2.5rem;
         padding-bottom: 4rem;
       }
 
       h2 {
-        font-size: 1.75rem;
         padding-top: 3rem;
       }
 
       p {
-        font-size: 1.25rem;
         padding-bottom: 0.25rem;
         strong {
           font-weight: 1.5rem;
@@ -544,17 +527,11 @@ footer {
 
       h1 {
         text-align: center;
-        font-size: 2.5rem;
         padding-bottom: 4rem;
       }
 
       h2 {
-        font-size: 1.75rem;
         padding-top: 3rem;
-      }
-
-      h3 {
-        font-size: 1.3rem;
       }
 
       ul {
@@ -562,7 +539,6 @@ footer {
         padding-left: 1.25rem;
         li {
           list-style: disc;
-          font-size: 1rem;
           padding-bottom: 0.25rem;
         }
       }
@@ -572,7 +548,6 @@ footer {
         padding-left: 1.25rem;
         li {
           list-style: disc;
-          font-size: 1rem;
           padding-bottom: 0.25rem;
         }
       }
@@ -580,14 +555,12 @@ footer {
       table {
         tbody {
           tr {
-            font-size: 1rem;
             padding-bottom: 0.25rem;
           }
         }
       }
 
       p {
-        font-size: 1rem;
         padding-bottom: 0.25rem;
         strong {
           font-weight: 1.5rem;
@@ -614,6 +587,7 @@ footer {
 
 /* #region recipe page */
 
+
 /* #region header */
 #nav-recipe-of-day {
   color: #008000;
@@ -639,7 +613,6 @@ footer {
       width: 100%;
 
       h1 {
-        font-size: 2rem;
         text-align: left;
         padding-bottom: 2rem;
       }
@@ -667,9 +640,6 @@ footer {
             height: 1rem;
           }
 
-          span {
-            font-size: 1rem;
-          }
         }
           
           
@@ -705,14 +675,12 @@ footer {
       span {
         width: 10%;
         min-width: 150px;
-        font-size: 1.5rem;
       }
 
       input {
         width: 20%;
         padding: 0.75rem 1rem;
         border-color: rgba(0, 0, 0, 0.1);
-        font-size: 1rem;
         border-top-left-radius: 8px;
         border-bottom-left-radius: 8px;
       }
@@ -724,7 +692,6 @@ footer {
         color: white;
         padding: 0.75rem 2rem;
         left:-0.4rem;
-        font-size: 1rem;
         text-align: center;
         border-top-right-radius: 8px;
         border-bottom-right-radius: 8px;
@@ -762,7 +729,6 @@ footer {
         td {
           width: 100%;
           padding: 0.75rem;
-          font-size: 1.25rem;
         }
         .td-col-1 {
           width: 10%;
@@ -795,10 +761,6 @@ footer {
     .recipe-preparation {
       width: 100%;
 
-      h2 {
-        font-size: 2rem;
-      }
-
       >div {
         width: 100%;
         column-gap: 2rem;
@@ -816,15 +778,11 @@ footer {
             height: 1rem;
           }
 
-          span {
-            font-size: 1rem;
-          }
         }
       }
 
       #preparation-descr {
         padding-top:1.5rem;
-        font-size: 1rem;
       }
     }
   }
@@ -842,7 +800,6 @@ footer {
 
     h3 {
       width: 100%;
-      font-size: 1.5rem;
     }
 
     >div { 
@@ -859,9 +816,7 @@ footer {
         background: black;
         border: 2px solid #008000
       }
-      #owner-name {
-        font-size: 1.5rem;
-      }
+
     }
   }
 }
@@ -871,10 +826,6 @@ footer {
 
 
 /* #endregion recipe page */
-
-
-
-
 
 /**
 * ====================
@@ -903,18 +854,15 @@ footer {
 
       h2 {
         margin-top: 0;
-        font-size: 2rem;
       }
 
       p {
-        font-size: 1.25rem;
         margin: 1rem 0;
       }
 
       .button {
         display: inline-block;
         margin-top: 4%;
-        font-size: 1rem;
         border-style: none;
         padding: 0.76rem 4rem;
         background-color: #008000;
@@ -938,7 +886,6 @@ footer {
 
   h2 {
     text-align: center;
-    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -950,7 +897,6 @@ footer {
         align-items: center;
         gap: 1rem;
         span {
-          font-size: 1.5rem;
           font-weight: bold;
         }
       }
@@ -964,7 +910,6 @@ footer {
   padding: 2rem 0 4rem;
   h2 {
     text-align: center;
-    font-size: 2rem;
     margin-bottom: 2rem;
   }
 
@@ -977,7 +922,6 @@ footer {
         display: inline-block;
         margin-bottom: 1rem;
       }
-      font-size: 1.25rem;
     }
     justify-content: center;
     .info-image {
