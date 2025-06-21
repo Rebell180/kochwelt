@@ -198,6 +198,11 @@ h3 {
     text-align: center;
   }
 
+  h3 {
+    text-align: center;
+    padding-top: 3rem;
+  }
+
   .meals-selection {
     justify-content: space-evenly;
     padding: 3.5rem 0 2.5rem 0;
